@@ -26,3 +26,7 @@ C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\obj\Debug\net9.
 C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\obj\Debug\net9.0\CloudIncidentApi.pdb
 C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\obj\Debug\net9.0\CloudIncidentApi.genruntimeconfig.cache
 C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\obj\Debug\net9.0\ref\CloudIncidentApi.dll
+C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Garza\cloud-incident-dashboard\backend\CloudIncidentApi\obj\Debug\net9.0\CloudIncidentApi.sourcelink.json
