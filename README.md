@@ -38,7 +38,7 @@ Git & GitHub
 Postman (for testing APIs)
 Powershell / CLI
 
-📆 Getting Started
+Getting Started
 
 1. Clone the Repo
 
@@ -67,7 +67,7 @@ Powershell / CLI
 
    Runs the backend on: <http://localhost:5245>
 
-🔀 Connecting Frontend to Backend
+Connecting Frontend to Backend
 
 In frontend/vite.config.ts (or vite.config.js), add a proxy to forward API requests to your backend:
 
@@ -76,10 +76,12 @@ server: {
     '/api': '<http://localhost:5245>'
   }
 }
-
-🛠️ Future Features:
-Real-time incident tracking
-
-API integration
+ Future Features:
+ Login and authentication
+ OAuth integration (e.g., Azure AD)
+ Cloud incident filtering by severity/date
+ Role-based access (admin, viewer)
+ Alerts and notifications
+ Data persistence (SQL Server, Cosmos DB)
 
 Dashboard UI
