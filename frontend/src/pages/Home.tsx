@@ -15,11 +15,52 @@ export default function Home() {
   const open = incidents.filter(i => i.status.toLowerCase() === 'open').length;
   const highSeverity = incidents.filter(i => i.severity.toLowerCase() === 'high').length;
 
-  return (
+  const [filter, setFilter] = useState<string>('all');
+  const [view, setView] = useState<'table' | 'cards'>('table');
+
+  const filteredIncidents = filter === 'all'
+    ? incidents
+    : incidents.filter(i => i.severity.toLowerCase() === filter);
+
+ return (
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-2xl font-bold mb-4">Cloud Incident Dashboard</h1>
+
       <KPISection total={total} open={open} highSeverity={highSeverity} />
-      <IncidentTable incidents={incidents} />
+
+      <div className="mb-4 flex justify-between items-center">
+        <select
+          onChange={(e) => setFilter(e.target.value)}
+          className="p-2 border border-gray-300 rounded"
+        >
+          <option value="all">All Severities</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <button
+          onClick={() => setView(view === 'table' ? 'cards' : 'table')}
+          className="p-2 bg-blue-500 text-white rounded shadow"
+        >
+          Toggle to {view === 'table' ? 'Cards' : 'Table'} View
+        </button>
+      </div>
+
+      {view === 'table' ? (
+        <IncidentTable incidents={filteredIncidents} />
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredIncidents.map(incident => (
+            <div key={incident.id} className="bg-white p-4 rounded shadow">
+              <h3 className="font-bold text-lg mb-2">{incident.title}</h3>
+              <p><strong>Severity:</strong> {incident.severity}</p>
+              <p><strong>Status:</strong> {incident.status}</p>
+              <p><strong>Date:</strong> {new Date(incident.dateCreated).toLocaleDateString()}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
