@@ -1,9 +1,16 @@
-import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MainLayout from './layout/MainLayout'
+import Dashboard from './pages/Dashboard'
 
-function App() {
-  // Placeholder for future auth logic
-  const isAuthenticated = true;
-  return isAuthenticated ? <Home /> : <div className="p-6">Please login to access the dashboard.</div>;
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Dashboard />} />
+          {/* More routes can go here */}
+        </Route>
+      </Routes>
+    </Router>
+  )
 }
-
-export default App;
