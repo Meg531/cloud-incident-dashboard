@@ -1,0 +1,16 @@
+.dashboard-header {
+background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+color: #fff;
+padding: 2rem 0;
+border-radius: 0.5rem;
+box-shadow: 0 2px 8px rgba(30, 64, 175, 0.1);
+}
+
+.incident-card {
+border-left: 4px solid #2563eb;
+transition: box-shadow 0.2s;
+}
+
+.incident-card:hover {
+box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+}
