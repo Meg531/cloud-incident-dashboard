@@ -76,12 +76,17 @@ server: {
     '/api': '<http://localhost:5245>'
   }
 }
- Future Features:
- Login and authentication
- OAuth integration (e.g., Azure AD)
- Cloud incident filtering by severity/date
- Role-based access (admin, viewer)
- Alerts and notifications
- Data persistence (SQL Server, Cosmos DB)
+🔮 Planned Features
+🔐 User authentication & login (OAuth with Azure AD)
 
-Dashboard UI
+🎯 Filter incidents by severity, type, or date
+
+👥 Role-based access control (Admin, Viewer)
+
+📣 Real-time alerts & notifications
+
+💾 Persistent storage with SQL Server or Cosmos DB
+
+📊 Responsive dashboard UI for visualizing incident metrics
+
+
