@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudIncidentApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0bf02cd5f19056a30fffe5559e020ffc0d653d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70d2ddeaf1c584c71a660aaf4fa49aa460809bed")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudIncidentApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudIncidentApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
